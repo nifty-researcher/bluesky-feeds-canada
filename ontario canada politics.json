@@ -1,0 +1,60 @@
+{
+    "displayName": "Ontario | Canada Pol",
+    "blocks": [
+        {
+            "id": "aaadnsopqiile",
+            "type": "input",
+            "inputType": "firehose",
+            "firehoseSeconds": 259200
+        },
+        {
+            "type": "remove",
+            "subject": "item",
+            "value": "hellthread",
+            "id": "aaadofw4iqyuw"
+        },
+        {
+            "id": "aaadnsopqjeim",
+            "type": "remove",
+            "subject": "item",
+            "value": "repost"
+        },
+        {
+            "id": "aaadnsopqi4uo",
+            "type": "regex",
+            "value": "(?i).*\\b(?:Ontario|Canada|Toronto|Ottawa)\\b.*\\b(?:legislation|bill|parliament|law|policy|election|government|premier|prime minister|minister|MPP|MP|Doug Ford|Mark Carney|Pierre Poilievre|Avi Lewis|provincial|federal)\\b.*",
+            "caseSensitive": false,
+            "target": "text|alt_text|link"
+        },
+        {
+            "type": "regex",
+            "value": "(?i).*\\b(?:legislation|bill|parliament|law|policy|election|government|premier|prime minister|minister|MPP|MP|Doug Ford|Mark Carney|Pierre Poilievre|Avi Lewis|provincial|federal)\\b.*\\b(?:Ontario|Canada|Toronto|Ottawa)\\b.*",
+            "caseSensitive": false,
+            "id": "aaadodwrjqwbw",
+            "target": "text|alt_text|link"
+        },
+        {
+            "type": "regex",
+            "value": "(?i)\\b(?:USA|U\\.S\\.A\\.|US|U\\.S\\.|United States|American|Washington|Congress|Senate|House|White House|Trump|Biden|Republican|Democrat|GOP)\\b",
+            "caseSensitive": false,
+            "id": "aaadogfc3fo5u",
+            "invert": true
+        },
+        {
+            "type": "input",
+            "inputType": "tags",
+            "id": "aaadoeb46info",
+            "tags": [
+                "canpoli",
+                " onpoli",
+                " cdnpoli"
+            ]
+        },
+        {
+            "id": "aaadnsopqlc5k",
+            "type": "sort",
+            "sortType": "created_at"
+        }
+    ],
+    "license": "EUPL-1.2"
+}

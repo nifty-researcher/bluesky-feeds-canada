@@ -1,0 +1,84 @@
+{
+    "displayName": "Canadian Eh",
+    "blocks": [
+        {
+            "id": "aaadnsopqille",
+            "type": "input",
+            "inputType": "firehose",
+            "firehoseSeconds": 259200
+        },
+        {
+            "type": "remove",
+            "subject": "item",
+            "value": "hellthread",
+            "id": "aaadofw4iqyuw"
+        },
+        {
+            "id": "aaadnsopqjeim",
+            "type": "remove",
+            "subject": "item",
+            "value": "repost"
+        },
+        {
+            "type": "input",
+            "inputType": "tags",
+            "id": "aaadoeb46info",
+            "tags": [
+                "canada",
+                "canadian",
+                "canadianhumor",
+                "canadianmemes",
+                "comedy",
+                "funny",
+                "lol",
+                "eh",
+                "toronto",
+                "vancouver",
+                "montreal",
+                "alberta",
+                "canuck"
+            ]
+        },
+        {
+            "id": "aaadcanadian01",
+            "type": "regex",
+            "value": "(?i)\\b(canada|canadian|canuck|eh|toque|loonie|toonie|mounties|hydro|double-double|chesterfield|yeah no|no yeah)\\b",
+            "caseSensitive": false,
+            "target": "text|alt_text|link"
+        },
+        {
+            "id": "aaadcanadian02",
+            "type": "regex",
+            "value": "(?i)\\b(no yeah|yeah no|chesterfield|double-double|hydro|mounties|toonie|loonie|toque|eh|canuck|canadian|canada)\\b",
+            "caseSensitive": false,
+            "target": "text|alt_text|link"
+        },
+        {
+            "id": "aaadhumor01",
+            "type": "regex",
+            "value": "(?i)\\b(funny|funny as hell|joke|jokes|meme|memes|lol|lmao|haha|hilarious|comedy)\\b",
+            "caseSensitive": false,
+            "target": "text|alt_text|link"
+        },
+        {
+            "id": "aaadhumor02",
+            "type": "regex",
+            "value": "(?i)\\b(comedy|hilarious|haha|lmao|lol|memes|meme|jokes|joke|funny as hell|funny)\\b",
+            "caseSensitive": false,
+            "target": "text|alt_text|link"
+        },
+        {
+            "type": "regex",
+            "value": "(?i)\\b(?:politics|election|immigration|news|crime|weather|tax|hockey)\\b",
+            "caseSensitive": false,
+            "id": "aaadexclude01",
+            "invert": true
+        },
+        {
+            "id": "aaadnsopqlc5k",
+            "type": "sort",
+            "sortType": "created_at"
+        }
+    ],
+    "license": "EUPL-1.2"
+}
