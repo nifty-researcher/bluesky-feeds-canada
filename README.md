@@ -8,6 +8,8 @@ Each `.json` file is a Skyfeed configuration. You can keep these files as templa
 
 - `ontario canada politics.json`: a feed focused on Ontario and Canada politics content
 - `funny canadian.json`: a feed focused on funny Canadian content, slang, memes, and related posts
+_*Funny Canadian still needs a lot of refinement. It is currently picking up (unfunny) political
+posts and feeding lots of gaming posts (I guess "eh" is popular). Please make lots of suggestions!*_
 
 ## How to use these JSON files in Skyfeed
 
